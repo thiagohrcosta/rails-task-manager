@@ -1,3 +1,39 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap/scss/bootstrap";
+
+@import url("btn/btn-add.css");
+
+body{
+  background-color: #03506f;
+  background-image: -webkit-linear-gradient(65deg, #03506f 50%, #E4E9FD 50%);
+  height: 100vh;
+}
+
+ul{
+  list-style-type: none;
+}
+.text-title{
+  padding: 5px;
+  margin: 20px auto;
+  width: 500px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #03506f;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.task-content{
+  padding: 30px 10px;
+  margin: 20px auto;
+  width: 500px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #03506f;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+

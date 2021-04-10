@@ -1,0 +1,27 @@
+.btn-add{
+  width: 180px;
+  margin: 0 0 0 60%;
+  padding: 10px 35px;
+  background-color: #03506f;
+  border-radius: 20px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.btn-add :hover{
+  opacity: 0.7;
+}
+
+.btn-add > a{
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none
+}
+
+.btn-add  > a:hover{
+  color: #fff;
+  text-decoration: none;
+}
