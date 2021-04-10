@@ -1,16 +1,21 @@
-<h1>My tasks</h1>
-<ul>
-  <% @tasks.each do |task| %>
-    <li>
-      <% if task.completed == false %>
-        <input type="checkbox" >
-      <% else %>
-        <input type="checkbox" checked>
-      <% end %>
+<div>
+  <h1>My tasks</h1>
+</div>
 
-      <%= link_to task.title, task_path(task.id) %>
-    </li>
-  <% end %>
+<div>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li>
+        <% if task.completed == false %>
+          <input type="checkbox" >
+        <% else %>
+          <input type="checkbox" checked>
+        <% end %>
 
-  <%= link_to "Add new task", new_task_path %>
-</ul>
+        <%= link_to task.title, task_path(task.id) %>
+      </li>
+    <% end %>
+
+    <%= link_to "Add new task", new_task_path %>
+  </ul>
+</div>
