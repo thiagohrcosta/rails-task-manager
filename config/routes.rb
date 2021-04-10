@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "tasks", to: "tasks#index", as: :tasks
 
   # create route
-  get "tasks/new", to: "tasks#new"
+  get "tasks/new", to: "tasks#new", as: :new_task
 
   # display one task route
   get "tasks/:id", to: "tasks#show", as: :task
