@@ -1,26 +1,34 @@
-<h1><%= @task.title %></h1>
+<div class="container box-content">
+  <h1><%= @task.title %></h1>
 
-<p><%= @task.details %></p>
+  <p><%= @task.details %></p>
 
-<% if @task.completed === false %>
-  <p>This task is not completed yet</p>
-<% else %>
-  <p>Task is completed</p>
-<% end %>
-
-
-<br>
-
-<%= link_to "Edit", edit_task_path %>
+  <% if @task.completed === false %>
+    <p>This task is not completed yet</p>
+  <% else %>
+    <p>Task is completed</p>
+  <% end %>
 
 
-<%= link_to "Mark as completed", edit_task_path %>
+  <br>
 
+  <div class="buttons">
+    <span class="btn-action">
+      <%= link_to "Home", tasks_path %>
+    </span>
+    <span class="btn-action">
+      <%= link_to "Edit", edit_task_path %>
+    </span>
+    <span class="btn-action">
+      <%= link_to "Mark as Completed", edit_task_path %>
+    </span>
+    <span class="btn-action">
+    <%= link_to "Delete",
+        destroy_task_path(@task),
+        method: :delete,
+        data: { confirm: "Are you sure?"} %>
+    </span>
+  </div>
 
+</div>
 
-<%= link_to "Delete item",
-    destroy_task_path(@task),
-    method: :delete,
-    data: { confirm: "Are you sure?"} %>
-
-<%= link_to "Home", tasks_path %>

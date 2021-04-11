@@ -25,3 +25,23 @@
   color: #fff;
   text-decoration: none;
 }
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-action{
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #03506f;
+  color: #fff
+}
+
+.btn-action a{
+  color: #fff;
+}
+
+.btn-action a:hover{
+  color: #fff;
+}
