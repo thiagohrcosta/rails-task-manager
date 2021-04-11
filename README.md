@@ -1,6 +1,4 @@
-# To Do List
-
-![main banner](https://github.com/thiagohrcosta/rails-task-manager/blob/master/public/img/todoList.png?raw=true)
+![main banner](https://github.com/thiagohrcosta/rails-task-manager/blob/master/public/img/todoList1.png?raw=true)
 
 ## Technologies
 This project was created with:
@@ -10,27 +8,19 @@ This project was created with:
  - [ERB](https://ruby-doc.org/stdlib-2.7.1/libdoc/erb/rdoc/ERB.html) (for template system with Ruby)
  - [Pry-byebug](https://rubygems.org/gems/pry-byebug/versions/3.4.0?locale=pt-BR) (for debugging)
  - [Bootstrap](https://getbootstrap.com/)
+ - Sqlite3
 
+## How to run this project
+Download or clone it. . Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000/tasks`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Edit or mark as completed
+![enter image description here](https://github.com/thiagohrcosta/rails-task-manager/blob/master/public/img/todoList3.png?raw=true)
 
-Things you may want to cover:
+## What user can do?
+As user you can manipulate all **CRUD** operations like:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Read any task already created;
+ - Create new task;
+ - Edit an task;
+ - Mark an task as completed;
+ - Delete an task
